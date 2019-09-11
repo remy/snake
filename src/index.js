@@ -39,7 +39,7 @@ function reset() {
 
 function gameOver() {
   game.running = false;
-  scoreEl.innerHTML = 'GAME OVER ' + game.user.score;
+  scoreEl.innerHTML = 'GAME OVER ' + scoreEl.innerHTML;
 }
 
 function speedUp() {
