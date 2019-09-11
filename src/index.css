@@ -1,14 +1,7 @@
-@font-face {
-  font-family: 'font';
-  src: url('font.woff2') format('woff2'), url('font.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 html {
   background: #222;
   height: 100%;
-  font-family: monospace;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 body {
