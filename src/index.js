@@ -133,6 +133,8 @@ function main() {
   game.canvas = document.querySelector('canvas');
   game.ctx = game.canvas.getContext('2d');
 
+  controller.bindSelector('left', 'body');
+
   game.canvas.onclick = () => {
     if (!game.running) reset();
   };
