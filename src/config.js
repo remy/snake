@@ -4,4 +4,4 @@ export const HEIGHT = 20;
 
 const width = typeof window !== 'undefined' ? window.innerWidth : 100;
 
-export const PIXEL = ((width / WIDTH) * 0.95) | 0;
+export const PIXEL = ((width / WIDTH) * 1) | 0;
