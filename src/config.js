@@ -1,7 +1,7 @@
 export const FRAME_RATE = 100;
-export const WIDTH = 50;
-export const HEIGHT = 50;
+export const WIDTH = 20;
+export const HEIGHT = 20;
 
 const width = typeof window !== 'undefined' ? window.innerWidth : 100;
 
-export const PIXEL = ((width / WIDTH) * 0.9) | 0;
+export const PIXEL = ((width / WIDTH) * 0.95) | 0;
