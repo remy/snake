@@ -1,4 +1,4 @@
-export const FRAME_RATE = 100;
+export const FRAME_RATE = 64;
 export const WIDTH = 20;
 export const HEIGHT = 20;
 
