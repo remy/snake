@@ -49,9 +49,6 @@ export default class Snake {
   }
 
   update({ x = this.head.x, y = this.head.y } = {}) {
-    const tail = this.points.shift();
-    memory.write(tail, 0);
-
     const peek = memory.peek({ x, y });
 
     if (peek === 0xff) {
@@ -60,6 +57,9 @@ export default class Snake {
       this.emit('over');
       return;
     }
+
+    const tail = this.points.shift();
+    memory.write(tail, 0); // clr
 
     memory.write({ x, y });
 
