@@ -43,6 +43,7 @@ function gameOver() {
 }
 
 function speedUp() {
+  return // skip for now
   game.speed -= 32; // 30fps
   if (game.speed < 16) {
     game.speed = 16;
