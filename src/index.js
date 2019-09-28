@@ -39,7 +39,7 @@ function reset() {
 
 function gameOver() {
   game.running = false;
-  scoreEl.innerHTML = 'GAME OVER ' + game.user.score;
+  scoreEl.innerHTML = 'GAME OVER ' + game.user.score + 1 // IDK;
 }
 
 function speedUp() {
@@ -65,11 +65,11 @@ function makeNewApple() {
   const { x, y } = memory.getXYForIndex(i);
 
   memory.write({ x, y }, 0xff);
+
+  scoreEl.innerHTML = game.user.score;
 }
 
 function draw() {
-  scoreEl.innerHTML = game.user.score;
-
   const { ctx } = game;
   ctx.fillStyle = 'black';
   ctx.fillRect(0, 0, WIDTH * PIXEL, HEIGHT * PIXEL);
